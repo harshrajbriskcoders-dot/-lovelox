@@ -89,7 +89,13 @@ a{color:inherit}a:hover{color:inherit}
 .lx-cue i{display:block;width:1px;height:56px;background:linear-gradient(#C9AE82,#C9AE82) top/100% 40% no-repeat,rgba(244,239,230,.15);animation:lxCue 2.4s cubic-bezier(.7,0,.2,1) infinite}
 
 /* ---------- marquees ---------- */
-.lx-marquee{overflow:hidden;padding:22px 0}
+.lx-marquee {
+    overflow: hidden;
+    padding: 22px 0;
+    position: relative;
+    z-index: 99;
+    background: #0e0d0c;
+}
 .lx-marquee-track{display:flex;width:max-content;animation:lxMarquee 50s linear infinite}
 .lx-marquee--rev .lx-marquee-track{animation-direction:reverse;animation-duration:64s}
 .lx-marquee:hover .lx-marquee-track{animation-play-state:paused}
